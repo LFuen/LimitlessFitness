@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: url("/images/bgbw.jpg") no-repeat fixed;
+  background-position: center center;
+  background-size: cover;
+  background-color: #000000;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 775px) {
+  body {
+    background-image: url("/images/bg13.jpg");
+  }
+}
+#logo {
+  position: relative;
+  left: 25px;
+  top: 25px;
+}
+
+h1 {
+  position: relative;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 60px;
+  font-family: "Orbitron", sans-serif;
+  color: #f7f7f7;
+  text-shadow: 2px 2px 2px #5f9aaf;
+}
+
+nav {
+  width: 100%;
+  z-index: 1;
+  font-family: "Orbitron", sans-serif;
+  font-size: 22px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+@media only screen and (max-width: 774px) {
+  body {
+    background-color: #000000;
+  }
+
+  a {
+    position: relative;
+    text-decoration: none;
+  }
+
+  a::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    right: 0px;
+    bottom: -3px;
+    left: 0px;
+  }
+}
+nav .nav-menu {
+  padding: 0px;
+  margin: auto;
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  grid-gap: 50px;
+  list-style: none;
+  backdrop-filter: blur(10px);
+}
+nav .nav-item {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+nav .link:visited {
+  color: #cecece;
+  text-shadow: #1dcaff;
+}
+nav .nav-link {
+  color: whitesmoke;
+  text-decoration: none;
+  text-shadow: 2px 2px 2px black;
+  border-radius: 10px;
+  padding: 8px 10px;
+  font-weight: bold;
+  position: relative;
+}
+nav .nav-link::after {
+  content: "";
+  bottom: 0;
+  left: 50%;
+  display: inline-block;
+  background: none repeat scroll 0 0 transparent;
+  height: 2px;
+  width: 0;
+  background: whitesmoke;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+nav .nav-link:hover {
+  color: #5f9aaf;
+}
+nav .nav-link:hover:after {
+  bottom: 0;
+  width: 100%;
+  left: 0;
+}
+nav .sign-in {
+  margin-right: 50px;
+  color: whitesmoke;
+  text-decoration: none;
+  text-shadow: 2px 2px 2px black;
+  border-radius: 10px;
+  padding: 8px 10px;
+  font-weight: bold;
+  position: relative;
+}
+nav .sign-in:hover {
+  color: #5f9aaf;
+}
+
+footer {
+  text-align: center;
+  position: fixed;
+  font-family: "Orbitron", sans-serif;
+  font-weight: bold;
+  height: 60px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+}
+
+/*# sourceMappingURL=style.css.map */
