@@ -10,11 +10,6 @@ body {
   overflow: hidden;
 }
 
-@media only screen and (max-width: 775px) {
-  body {
-    background-image: url("/images/bg13.jpg");
-  }
-}
 
 #logo {
   position: relative;
@@ -43,26 +38,6 @@ nav {
   align-items: center;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-}
-
-@media only screen and (max-width: 774px) {
-  body {
-    background-color: #000000;
-  }
-
-  a {
-    position: relative;
-    text-decoration: none;
-  }
-
-  a::before {
-    content: "";
-    position: absolute;
-    height: 3px;
-    right: 0px;
-    bottom: -3px;
-    left: 0px;
-  }
 }
 
 nav {
